@@ -610,7 +610,7 @@ class TPUModelRunner:
         self,
         scheduler_output: "SchedulerOutput",
     ) -> ModelRunnerOutput:
-        # Update cached state.
+        # Update cached state
         self._update_states(scheduler_output)
 
         # If necessary, swap decodes/prompts to have all decodes on the start
